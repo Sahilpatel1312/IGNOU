@@ -1,16 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
 import { MadeWithDyad } from "@/components/made-with-dyad";
+import CourseListing from "@/components/CourseListing";
+import CounsellingForm from "@/components/CounsellingForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+      <header className="py-8 bg-blue-600 text-white text-center shadow-md">
+        <h1 className="text-5xl font-extrabold mb-2">Online Course & Counselling Hub</h1>
+        <p className="text-xl">Your gateway to higher education and personalized guidance.</p>
+      </header>
+
+      <main>
+        <CourseListing />
+        <CounsellingForm />
+      </main>
+
       <MadeWithDyad />
     </div>
   );
